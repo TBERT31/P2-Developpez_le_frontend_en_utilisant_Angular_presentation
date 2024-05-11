@@ -1,0 +1,107 @@
+.container{
+    margin: 10px;
+
+    @media screen and (max-width: 500px) {
+        margin: 8px;
+    }
+
+    @media screen and (max-width: 300px) {
+        margin: 5px;
+    }
+}
+
+.titleContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.titlePage{
+    background-color: #2A828E;
+    font-size: 2rem;
+    padding: 0.3em;
+    border-radius: 10px;
+    color: #f1f1f1;
+    margin: auto;
+    font-weight: 100;
+
+    @media screen and (max-width: 500px) {
+        font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 300px) {
+        font-size: 1.2rem;
+    }
+}
+
+.boxesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+  
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+}
+
+.boxContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.boxContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: #2A828E solid 3px;
+    padding: 0.2em 0.4em;
+    border-radius: 10px;
+    color: #6F6F6F;
+    margin: 20px;
+    font-weight: 100;
+
+    @media screen and (max-width: 500px) {
+        margin: 10px;
+    }
+
+    @media screen and (max-width: 300px) {
+        margin: 5px;
+    }
+}
+
+.boxText{
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0.3em 0.2em 0.2em;
+
+    @media screen and (max-width: 500px) {
+        font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 300px) {
+        font-size: 0.8rem;
+    }
+}
+
+.boxNumber{
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin: 0 0.1em 0.1em;
+
+    @media screen and (max-width: 500px) {
+        font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 300px) {
+        font-size: 0.8rem;
+    }
+}
