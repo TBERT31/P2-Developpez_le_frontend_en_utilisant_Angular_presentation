@@ -17,7 +17,8 @@ import { NavigationComponent } from './components/navigation/navigation.componen
 
 @NgModule({
   declarations: [AppComponent, NotFoundComponent, DashboardComponent,
-    HeadingComponent, SpinnerComponent, PieChartMedalsPerCountryComponent, DetailComponent, LineChartMedalsPerYearComponent, NavigationComponent,
+    HeadingComponent, SpinnerComponent, PieChartMedalsPerCountryComponent, DetailComponent, 
+    LineChartMedalsPerYearComponent, NavigationComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule, 
     AppRoutingModule, HttpClientModule, NgxChartsModule,
