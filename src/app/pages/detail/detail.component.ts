@@ -48,9 +48,9 @@ export class DetailComponent implements OnInit, OnDestroy {
 
         // On construit l'objet "boxes" qui est envoyé en paramètre du composant heading
         this.boxes = [
-          { label: 'Number of entries', content: this.numberOfEntries },
-          { label: 'Total number medals', content: this.numberOfMedals },
-          { label: 'Total number of athletes', content: this.numberOfAthletes },
+          { label: 'Number of entries', value: this.numberOfEntries },
+          { label: 'Total number medals', value: this.numberOfMedals },
+          { label: 'Total number of athletes', value: this.numberOfAthletes },
         ];
 
         // On formatte la données obtenu de l'observable afin de pouvoir les exploiter dans le line chart de ngx-charts
