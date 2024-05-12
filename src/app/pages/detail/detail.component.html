@@ -1,0 +1,12 @@
+<app-navigation></app-navigation>
+<app-heading 
+    *ngIf="!loading && !error"
+    [title]="nameOfCountry"
+    [boxes]="boxes">
+</app-heading>
+
+<app-line-chart-medals-per-year *ngIf="!loading && !error"  [results]="lineChartData"></app-line-chart-medals-per-year>
+<app-spinner *ngIf="loading"></app-spinner>
+<app-not-found *ngIf="error"></app-not-found>
+
+
