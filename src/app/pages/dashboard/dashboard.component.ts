@@ -13,7 +13,7 @@ import { Box } from 'src/app/core/models/Box.model';
 export class DashboardComponent implements OnInit, OnDestroy {
   // Observables qui permet de get les données du tableau et du chart
   public olympics$: Observable<Olympic[] | null> = of(null);
-  private subscription: Subscription = new Subscription();
+  private subscription: Subscription = new Subscription(); // Utile pour s'abonner et se désabonner de l'observable
 
   // Variables à afficher
   public numberOfJo: number = 0;

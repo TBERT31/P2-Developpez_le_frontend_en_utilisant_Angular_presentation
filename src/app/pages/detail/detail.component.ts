@@ -12,8 +12,9 @@ import { Box } from 'src/app/core/models/Box.model';
   styleUrls: ['./detail.component.scss']
 })
 export class DetailComponent implements OnInit, OnDestroy {
+  // Observables qui permet de get les données du tableau et du chart
   public olympic$: Observable<Olympic | undefined> = of(undefined);
-  private subscription: Subscription = new Subscription();
+  private subscription: Subscription = new Subscription(); // Utile pour s'abonner et se désabonner de l'observable
 
   // Variables à afficher
   public nameOfCountry: string = 'No country seems to correspond to this identifier';  // Correct typo here as well for consistency
@@ -30,7 +31,7 @@ export class DetailComponent implements OnInit, OnDestroy {
   constructor(
     private olympicService: OlympicService,
     private activatedRoute: ActivatedRoute,
-    private router: Router
+    //private router: Router
   ) {}
 
   ngOnInit(): void {

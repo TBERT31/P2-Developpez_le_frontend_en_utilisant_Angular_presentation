@@ -5,7 +5,7 @@ export interface LineChartSeriesData {
 }
 
 export interface LineChartDataNgxCharts {
-    id: number; // Je l'ajoute car cela pourrait être utile pour obtenir dynamiquement l'id et naviguer avec le router. (Potentiel future utilité)
+    id: number; // Je l'ajoute car cela pourrait être utile pour obtenir dynamiquement l'id et naviguer avec le router. (Potentielle future utilité)
     name: string;
     series: LineChartSeriesData[];
 }
