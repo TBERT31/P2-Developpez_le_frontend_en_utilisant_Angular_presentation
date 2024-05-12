@@ -1,0 +1,28 @@
+<div #chartContainer class="chartContainer">
+    <ngx-charts-pie-chart
+    [view]="view"
+    [results]="results"
+    [gradient]="gradient"
+    [legend]="showLegend"
+    [labels]="showLabels"
+    [doughnut]="isDoughnut"
+    [legendPosition]="legendPosition"
+    [trimLabels]="true"
+    [maxLabelLength]="15"
+    [legendTitle]="'Participating countries'"
+    [tooltipText]="tooltipText"
+    (select)="onClick($event)"
+    >
+    </ngx-charts-pie-chart>
+
+    <!-- L'attribut tooltipTemplate ne semble pas fonctionner, pourtant présent dans la doc officielle, 
+         Le souci doit surement provenir de la version trop ancienne d'Angular (14)
+    <ng-template #tooltipTemplate let-model="model">
+        <div style="padding: 10px; background-color: #2A828E; color: white; border-radius: 4px; border: 1px solid white;">
+        <strong>{{ model.name }}</strong>
+        <br>
+        🎖️ {{ model.value }}
+        </div>
+    </ng-template> 
+    -->
+</div>

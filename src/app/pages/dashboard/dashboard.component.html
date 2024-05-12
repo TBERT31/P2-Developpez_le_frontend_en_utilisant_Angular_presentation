@@ -1,0 +1,10 @@
+<app-heading 
+    *ngIf="!loading && !error"
+    [title]="'Medals per Country'"
+    [boxes]="boxes">
+</app-heading>
+
+<app-pie-chart-medals-per-country *ngIf="!loading && !error" [results]="pieChartData"></app-pie-chart-medals-per-country>
+<app-spinner *ngIf="loading"></app-spinner>
+<app-not-found *ngIf="error"></app-not-found>
+
