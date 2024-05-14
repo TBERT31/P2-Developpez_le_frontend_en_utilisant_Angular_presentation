@@ -1,4 +1,4 @@
-<app-navigation></app-navigation>
+<app-navigation *ngIf="!error"></app-navigation>
 <app-heading 
     *ngIf="!loading && !error"
     [title]="nameOfCountry"
