@@ -4,6 +4,7 @@ export interface PieChartDataNgxCharts {
     value: number;
 }
 
+
 /*** 
 Example of datasets, given in documentation.
 
@@ -53,3 +54,18 @@ Example of datasets, given in documentation.
 ]
 
 ***/
+
+export interface EventObject {
+  label: string;
+  name: string;
+  value: number;
+}
+
+export type EventType = string | EventObject;
+
+export interface TooltipItem {
+  data: {
+    name: string;
+  };
+  value: number;
+}
